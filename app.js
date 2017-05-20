@@ -42,6 +42,12 @@ app.directive("myDirectiveCustomdirective" , function() {
 			companyName : '@',
 			change : '&',
             userDetails : '='
+		},
+
+		compile : function(element, attributes) { 
+			console.log("In compile!!!!")
+			console.log(element)
+            console.log(attributes)
 		}
 	}
 })
